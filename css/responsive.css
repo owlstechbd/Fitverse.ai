@@ -1,3 +1,116 @@
+@media screen and (max-width: 1400px){
+    .price-content{
+        padding-left:8em;
+    }
+    .price-main-img img{
+        width: 900px;
+    }
+    .coaches-text{
+        padding-left: 8em;
+    }
+    .price-img {
+        overflow: hidden;
+    }
+    .slider-iteam {
+        height: 390px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .hero-img img {
+        
+        max-width: 700px;
+    }
+    .hero-content{
+        padding-right: 0;
+    }
+
+}
+@media screen and (max-width: 820px){
+    .hero-iteam{
+        flex-direction: column;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-img img{
+        width: 500px;
+    }
+    .hero-img {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-img img{
+        width: 600px;
+        left: 50%;
+        transform: translate(-50%,-10px);
+    }
+    .hero-content{
+        padding-top: 0;
+    }
+    .hero {
+        height: 900px;
+    }
+    .routine-content{
+        padding-left: 0;
+    }
+    h2{
+        font-size: 27px!important;
+    }
+    .section-padding{
+        padding: 60px 0;
+    }
+    .pricing{
+        flex-direction: column;
+    }
+    .price-content{
+        width: 100%;
+        text-align: center;
+        padding:50px 30px 30px 30px;
+    }
+    .price-box{
+        width: 50%;
+        text-align: left;
+    }
+    .price-img {
+        width: 100%;
+        position: relative;
+    }
+    .price-main-img img {
+        width: 750px;
+        top: 18%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -12%);
+    }
+    .text-logo img {
+        margin-top: -12px;
+        height: 420px;
+    }
+    .coaches-text {
+        width: 50%;
+        padding-left: 2em;
+    }
+    .coaches-slider {
+        width: 44%;
+        position: relative;
+    }
+    .slider-iteam {
+        width: 100%;
+        height: auto;
+    }
+    .coaches-slider {
+        width: 54%;
+       padding: 30px;
+    }
+    .custom-nav{
+        left: 0;
+        margin-top: -60px;
+    }
+    .item{
+        width: 100%!important;
+    }
+
+}
 @media screen and (max-width: 720px){
 
 
@@ -7,8 +120,69 @@
     .for-mobile{
         display: block;
     }
-    .geeks img{
-        width: 70%;
+    .hero-img img {
+        width: 100%;
+        left: 45%;
+        transform: translate(-50%,-10px);
+    }
+    .hero{
+        height: 850px;
+    }
+    .section-padding{
+        padding: 50px 0;
+    }
+    h2{
+        font-size: 25px!important;
+    }
+    .price-iteam{
+        flex-direction: column;
+    }
+    .price-box{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .price-main-img{
+        width: 100%;
+        height: 350px;
+    }
+    .price-main-img img {
+        width: 600px;
+    }
+    .text-logo img{
+        display: none;
+    }
+    .bg-coaches{
+        display: none;
+    }
+    .coaches-area{
+        flex-direction: column;
+    }
+    .coaches-text{
+        width: 100%;
+    }
+    .coaches-slider{
+        width: 100%;
+    }
+    .custom-nav{
+        left: 15px;
+    }
+    .training-iteam {
+        padding: 20px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .mar-top{
+        margin-top: 25px;
+    }
+    .footer-link p{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .hero-content h1{
+        font-size: 30px!important;
+    }
+    .popup-content form{
+        padding: 20px;
     }
 
 }
