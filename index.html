@@ -10,22 +10,25 @@
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-									
+	
+	  								
   	<!-- google Font  -->
   	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
   	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/b2b7d27ef0.js" crossorigin="anonymous"></script>
+	<!-- Carousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
 
-	<section class="hero almost-black">
+	<section class="hero almost-black" id="hero">
 		<div class="container">
 			<div class="header">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" alt=""></a>
 				</div>
 				<div class="header-menu">
-					<a href="#">Pricing</a>
+					<a href="#pricing">Pricing</a>
 				</div>
 			</div>
 			<div class="hero-iteam">
@@ -36,7 +39,7 @@
 						<li><img src="images/icon2.png" alt="">Workout from Anywhere</li>
 					</ul>
 					<div class="gobal-btn">
-						<a href="#" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br>
+						<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
 						<p>No Credit Card Required</p>
 					</div>
 				</div>
@@ -47,9 +50,532 @@
 		</div>
 	</section>
 
-	<section class="section-padding about">
+	<section class="section-padding routine">
+		<div class="container">
+			<div class="row dis-flex">
+				<div class="col-md-6">
+					<div class="routine-img">
+						<img src="images/routine-img.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="routine-content">
+						<h2>Find your<br> <span class="topaz-color">perfect workout</span> <br>routine</h2>
+						<p>Our online personal trainers are experts in different disciplines, offering Yoga, Strength Training, HIIT, mindfulness, and more. Level up your fitness from anywhere, anytime.</p>
+						<div class="gobal-btn">
+							<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- routine -->
 
+	<section class="pricing" id="pricing">
+		<div class="price-content">
+			<h2><span class="blue-color">Introducing</span><br> The Future of Personal<br> Training</h2>
+			<div class="arow-heading Pink-bg">
+				<h5>TRY IT. BELIEVE IT</h5>
+			</div>
+			<div class="price-iteam">
+				<div class="price-box">
+					<h6>Traditional Personal Training</h6>
+					<h5>AED 399 per hour</h5>
+					<ul>
+						<li>1 Session</li>
+						<li>Workout from gym </li>
+						<li>Pay per session</li>
+					</ul>
+				</div>
+				<div class="price-box blue-price">
+					<p>Traditional Personal Training</p>
+					<h5>AED 399 per hour</h5>
+					<ul>
+						<li>1 Session</li>
+						<li>Workout from gym </li>
+						<li>Pay per session</li>
+					</ul>
+				</div>
+			</div><!-- price-iteam -->
+			<div class="gobal-btn less-margin">
+				<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+			</div>
+		</div>
+		<div class="price-img almost-black">
+			<div class="price-main-img">
+				<img src="images/price-img.png" alt="">
+			</div>
+			<div class="text-logo">
+				<img src="images/text-logo.png" alt="">
+			</div>
+		</div>
+	</section><!-- pricing -->
+
+	<section class="section-padding  coaches" id="reviews">
+		<div class="coaches-area">
+			
+			<div class="coaches-text">
+				<h2>Coaches</h2>
+				<p>We are the team of 50 plus Global Coaches who have been national level gymnast athletes and sports champions.
+				</p>
+				<span class="topaz-color">What are you waiting for?</span>
+				<div class="gobal-btn">
+					<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+				</div>
+			</div>
+			<div class="coaches-slider">
+				<div class="owl-carousel">
+					<div class="item">
+						<div class="slider-iteam">
+							<img src="images/coaches1.png" alt="">
+							<div class="slider-text">
+								<h4>Estefania</h4>
+								<p>Estefania strives to deliver a holistic approach of understanding client’s goals, diet & lifestyle choices before planning the workout.</p>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="item">
+						<div class="slider-iteam">
+							<img src="images/coaches2.png" alt="">
+							<div class="slider-text">
+								<h4>SALBANI</h4>
+								<p>Salbani believes that the right mindset and determination can help you achieve your fitness goals.</p>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="item">
+						<div class="slider-iteam">
+							<img src="images/coaches3.png" alt="">
+							<div class="slider-text">
+								<h4>Nikhil</h4>
+								<p>Nikhil is highly invested in client progress and incorporates his wrestling background to unleash client’s potential.</p>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="item">
+						<div class="slider-iteam">
+							<img src="images/coaches4.png" alt="">
+							<div class="slider-text">
+								<h4>Vedesh</h4>
+								<p>Vedesh’s mantra is to strengthen the body, calm your mind and enjoy inner peace.</p>
+							</div>
+						</div>
+					</div><!-- item -->
+					
+				</div>
+				<div class="custom-nav">
+					<button class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+					<button class="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+				</div>
+			</div><!-- coaches-slider -->
+		</div><!-- coaches-area -->
+		<div class="bg-coaches">
+
+		</div>
 	</section>
+
+	<section class="section-padding personal-training">
+		<div class="container">
+			<h2>Personal Training,<span class="pink-color"> made easy</span></h2>
+			<div class="row mar-top">
+				<div class="col-md-4">
+					<div class="training-iteam almost-black">
+						<h3> <img src="images/icon3.png" alt="">Flexibility</h3>
+						<p>Online personal training fits seamlessly into your lifestyle with the freedom to exercise anytime, anywhere, without the constraints of traditional gym schedules or crowded spaces.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="training-iteam almost-black">
+						<h3> <img src="images/icon4.png" alt="">Accountability</h3>
+						<p>fitverse.ai coach support your needs, with customized workout plans, nutrition strategies, and constant motivation to keep you on track and achieve your goals.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="training-iteam almost-black">
+						<h3> <img src="images/icon5.png" alt="">Diversity</h3>
+						<p>We provide a vast pool of experienced trainers from around the world, allowing you to find the perfect match for your fitness preferences and goals.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section><!-- personal-training -->
+
+	<section class="section-padding almost-black ">
+		<div class="container">
+			<h2 class="color-white">Reviews</h2>
+			<div class="slider-container">
+				<div class="reviews-container">
+					<div class="reviews-iteam">
+						<img src="images/reviews1.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+						</div>
+						<p>"The online workout sessions leave me energized and help me stay more productive and focussed at work & home. I wouldn't have believed that virtual fitness training would be so effective!"</p>
+						<div class="boder-arow">
+							<h5>Devika Pradhan, USA</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews2.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My conversation with my lifestyle coach was  much more than discussing just food! I was comfortable enough to discuss my health with her. She was very understanding."</p>
+						<div class="boder-arow">
+							<h5>DJ Swanahh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews3.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I took my first session at the comfort of my home. The best part about @fitverse.ai is that you get a personal trainer who monitors your journey throughout and is live during the session to push you"</p>
+						<div class="boder-arow">
+							<h5>Farah Farooqui, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews4.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"During the call with my coach today was a bit of reflection and I feel alot more energized than before and feeling a lighter already. I am sleeping much better now.</p>
+						<div class="boder-arow">
+							<h5>Hasan Kanchwala, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews1.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"The online workout sessions leave me energized and help me stay more productive and focussed at work & home. I wouldn't have believed that virtual fitness training would be so effective!"</p>
+						<div class="boder-arow">
+							<h5>Devika Pradhan, USA</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews2.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My conversation with my lifestyle coach was  much more than discussing just food! I was comfortable enough to discuss my health with her. She was very understanding."</p>
+						<div class="boder-arow">
+							<h5>DJ Swanahh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews3.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I took my first session at the comfort of my home. The best part about @fitverse.ai is that you get a personal trainer who monitors your journey throughout and is live during the session to push you"</p>
+						<div class="boder-arow">
+							<h5>Farah Farooqui, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews4.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"During the call with my coach today was a bit of reflection and I feel alot more energized than before and feeling a lighter already. I am sleeping much better now.</p>
+						<div class="boder-arow">
+							<h5>Hasan Kanchwala, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews1.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"The online workout sessions leave me energized and help me stay more productive and focussed at work & home. I wouldn't have believed that virtual fitness training would be so effective!"</p>
+						<div class="boder-arow">
+							<h5>Devika Pradhan, USA</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews2.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My conversation with my lifestyle coach was  much more than discussing just food! I was comfortable enough to discuss my health with her. She was very understanding."</p>
+						<div class="boder-arow">
+							<h5>DJ Swanahh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews3.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I took my first session at the comfort of my home. The best part about @fitverse.ai is that you get a personal trainer who monitors your journey throughout and is live during the session to push you"</p>
+						<div class="boder-arow">
+							<h5>Farah Farooqui, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					
+	
+
+				</div><!-- reviews-container -->
+
+
+				<div class="reviews-container-2">
+					<div class="reviews-iteam">
+						<img src="images/reviews5.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+						</div>
+						<p>"I love the fact I can workout from anywhere anytime being it a virtual workout. My coach is super knowledgeable of human anatomy, helping fix my injury & work on my weak muscles!"</p>
+						<div class="boder-arow">
+							<h5>Ali Rahbar, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews6.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My training coach took all the details from me including my lifestyle, what I eat, my everyday routine or any health issues and made the best workout plan for me. Excited for this journey!"</p>
+						<div class="boder-arow">
+							<h5>Saadiya Rafique, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews7.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I got a customized nutrition plan which honestly suggested a good variety of food options and more protiens! Meal plan never looked this tempting!"</p>
+						<div class="boder-arow">
+							<h5>Arsh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews8.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>Fitverse.ai program has become a lifestyle for me. The trainers are passionate and dedicated, making every session fun and effective. I couldn't be happier with the results!</p>
+						<div class="boder-arow">
+							<h5>Ishendra Singh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews5.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I love the fact I can workout from anywhere anytime being it a virtual workout. My coach is super knowledgeable of human anatomy, helping fix my injury & work on my weak muscles!"</p>
+						<div class="boder-arow">
+							<h5>Ali Rahbar, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews6.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My training coach took all the details from me including my lifestyle, what I eat, my everyday routine or any health issues and made the best workout plan for me. Excited for this journey!"</p>
+						<div class="boder-arow">
+							<h5>Saadiya Rafique, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews7.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I got a customized nutrition plan which honestly suggested a good variety of food options and more protiens! Meal plan never looked this tempting!"</p>
+						<div class="boder-arow">
+							<h5>Arsh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews8.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>Fitverse.ai program has become a lifestyle for me. The trainers are passionate and dedicated, making every session fun and effective. I couldn't be happier with the results!</p>
+						<div class="boder-arow">
+							<h5>Ishendra Singh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews5.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"I love the fact I can workout from anywhere anytime being it a virtual workout. My coach is super knowledgeable of human anatomy, helping fix my injury & work on my weak muscles!"</p>
+						<div class="boder-arow">
+							<h5>Ali Rahbar, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews6.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+
+						</div>
+						<p>"My training coach took all the details from me including my lifestyle, what I eat, my everyday routine or any health issues and made the best workout plan for me. Excited for this journey!"</p>
+						<div class="boder-arow">
+							<h5>Saadiya Rafique, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+					<div class="reviews-iteam">
+						<img src="images/reviews7.png" alt="">
+						<div class="insta-icon">
+							<a href="#"><img src="images/insta.png" alt=""></a>
+						</div>
+						<p>"I got a customized nutrition plan which honestly suggested a good variety of food options and more protiens! Meal plan never looked this tempting!"</p>
+						<div class="boder-arow">
+							<h5>Arsh, UAE</h5>
+						</div>
+					</div><!-- reviews-iteam -->
+
+		
+
+				</div><!-- reviews-container -->
+			</div>
+		</div>
+	</section>
+
+	<footer class="almost-black">
+		<div class="container">
+			<div class="row dis-flex">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="footer-logo">
+						<img src="images/logo.png" alt="">
+						<p>The Future of Personal Training</p>
+						<div class="gobal-btn less-margin">
+							<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br>
+						</div>
+						<ul class="socail-media">
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Linkedin </a></li>
+							<li><a href="#">Tiktok</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="footer-link">
+						<ul>
+							<li><a href="#hero">Home</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#reviews">Reviews</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="footer-link mar-top">
+						<ul>
+							<li><a href="mailto:support@fitverse.ai"><img src="images/mail.svg" alt="">support@fitverse.ai</a></li>
+							<li><a href="#"><img src="images/wp.png" alt="">+971 505021912</a></li>
+						</ul>
+						<p>METAFIT – FZCO © 2023 All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- footer -->
+
+
+	<div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="popup-caption">
+				<h3>7 days free trial</h3>
+				<p>( 3 Personal Training + 1 Nutrition Sessions )</p>
+			</div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"  placeholder="Enter your email" required>
+
+                <label for="phone">Whatsapp/Call Phone</label>
+                <input type="tel" id="phone"  placeholder="Enter Phone number" required>
+
+                <p>What would you like to try?</p>
+				<div class="radio-button">
+					<label class="radio">
+						<input type="radio" name="training" value="Personal Training" checked>
+						<span>Personal Training</span>
+				  	</label>
+				  	<label class="radio">
+						<input type="radio" name="training" value="Yoga">
+						<span>Yoga</span>
+				  	</label>
+				  	<label class="radio">
+						<input type="radio" name="training" value="Fuctional Training">
+						<span>Fuctional Training</span>
+				  	</label>
+				</div>
+                <p>Trainer Preference</p>
+				<div class="radio-button">
+					<label class="radio">
+						<input type="radio" name="gender" value="Male" checked>
+						<span>Male</span>
+				  	</label>
+				  	<label class="radio">
+						<input type="radio" name="gender" value="Female">
+						<span>Female</span>
+				  	</label>
+				  	<label class="radio">
+						<input type="radio" name="gender" value="Any">
+						<span>Any</span>
+				  	</label>
+				</div>
+
+                <button type="submit">Start 7 Days Free Trial <img src="images/arow.png" alt=""></button>
+            </form>
+        </div>
+    </div>
+
+	
+	
 	
 	
 
@@ -57,6 +583,10 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- Carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   	
 	<!-- main.js -->
 	<script src="js/main.js"></script>
