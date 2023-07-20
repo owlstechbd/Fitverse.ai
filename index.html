@@ -18,6 +18,11 @@
 	<script src="https://kit.fontawesome.com/b2b7d27ef0.js" crossorigin="anonymous"></script>
 	<!-- Carousel CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<!-- tel -->
+	<link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
 </head>
 <body>
 
@@ -39,7 +44,7 @@
 						<li><img src="images/icon2.png" alt="">Workout from Anywhere</li>
 					</ul>
 					<div class="gobal-btn">
-						<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+						<a href="#" onclick="showPopup()" class="Pink-bg">Start 3 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
 						<p>No Credit Card Required</p>
 					</div>
 				</div>
@@ -63,7 +68,7 @@
 						<h2>Find your<br> <span class="topaz-color">perfect workout</span> <br>routine</h2>
 						<p>Our online personal trainers are experts in different disciplines, offering Yoga, Strength Training, HIIT, mindfulness, and more. Level up your fitness from anywhere, anytime.</p>
 						<div class="gobal-btn">
-							<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+							<a href="#" onclick="showPopup()" class="Pink-bg">Start 3 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
 						</div>
 					</div>
 				</div>
@@ -88,17 +93,17 @@
 					</ul>
 				</div>
 				<div class="price-box blue-price">
-					<p>Traditional Personal Training</p>
-					<h5>AED 399 per hour</h5>
+					<h6>Fitverse.ai Personal Training</h6>
+					<h5>AED 499 per Month</h5>
 					<ul>
-						<li>1 Session</li>
-						<li>Workout from gym </li>
-						<li>Pay per session</li>
+						<li>12 Online PT Sessions</li>
+						<li>Workout from Anywhere </li>
+						<li>Nutrition Guidance</li>
 					</ul>
 				</div>
 			</div><!-- price-iteam -->
 			<div class="gobal-btn less-margin">
-				<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+				<a href="#" onclick="showPopup()" class="Pink-bg">Start 3 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
 			</div>
 		</div>
 		<div class="price-img almost-black">
@@ -120,7 +125,7 @@
 				</p>
 				<span class="topaz-color">What are you waiting for?</span>
 				<div class="gobal-btn">
-					<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
+					<a href="#" onclick="showPopup()" class="Pink-bg">Start 3 Days Free Trial <img src="images/arow.png" alt=""></a><br><br>
 				</div>
 			</div>
 			<div class="coaches-slider">
@@ -169,9 +174,7 @@
 				</div>
 			</div><!-- coaches-slider -->
 		</div><!-- coaches-area -->
-		<div class="bg-coaches">
-
-		</div>
+		
 	</section>
 
 	<section class="section-padding personal-training">
@@ -489,7 +492,7 @@
 						<img src="images/logo.png" alt="">
 						<p>The Future of Personal Training</p>
 						<div class="gobal-btn less-margin">
-							<a href="#" onclick="showPopup()" class="Pink-bg">Start 7 Days Free Trial <img src="images/arow.png" alt=""></a><br>
+							<a href="#" onclick="showPopup()" class="Pink-bg">Start 3 Days Free Trial <img src="images/arow.png" alt=""></a><br>
 						</div>
 						<ul class="socail-media">
 							<li><a href="#">Instagram</a></li>
@@ -508,7 +511,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="footer-link mar-top">
+					<div class="footer-link footer-margin">
 						<ul>
 							<li><a href="mailto:support@fitverse.ai"><img src="images/mail.svg" alt="">support@fitverse.ai</a></li>
 							<li><a href="#"><img src="images/wp.png" alt="">+971 505021912</a></li>
@@ -525,8 +528,9 @@
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
             <div class="popup-caption">
-				<h3>7 days free trial</h3>
-				<p>( 3 Personal Training + 1 Nutrition Sessions )</p>
+				<h3>3 days free trial</h3>
+				<p>( 1 Personal training + 1 Nutrition Session)
+				</p>
 			</div>
             <form>
                 <label for="name">Name:</label>
@@ -535,8 +539,8 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email"  placeholder="Enter your email" required>
 
-                <label for="phone">Whatsapp/Call Phone</label>
-                <input type="tel" id="phone"  placeholder="Enter Phone number" required>
+                <label for="phone">Phone</label><br>
+                <input id="phone" type="tel" name="phone" style="width: 100%;"/>
 
                 <p>What would you like to try?</p>
 				<div class="radio-button">
@@ -553,7 +557,8 @@
 						<span>Fuctional Training</span>
 				  	</label>
 				</div>
-                <p>Trainer Preference</p>
+                <p>Trainer Gender
+				</p>
 				<div class="radio-button">
 					<label class="radio">
 						<input type="radio" name="gender" value="Male" checked>
@@ -563,13 +568,10 @@
 						<input type="radio" name="gender" value="Female">
 						<span>Female</span>
 				  	</label>
-				  	<label class="radio">
-						<input type="radio" name="gender" value="Any">
-						<span>Any</span>
-				  	</label>
+				  	
 				</div>
 
-                <button type="submit">Start 7 Days Free Trial <img src="images/arow.png" alt=""></button>
+                <button type="submit">Start 3 Days Free Trial <img src="images/arow.png" alt=""></button>
             </form>
         </div>
     </div>
@@ -584,6 +586,7 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
 	<!-- Carousel JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

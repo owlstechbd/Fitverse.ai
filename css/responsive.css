@@ -1,3 +1,17 @@
+@media screen and (max-width: 1623px){
+
+}
+
+@media screen and (max-width: 1576px){
+    .price-content{
+        padding-left:8em;
+    }
+    .coaches-text{
+        padding-left: 8em;
+    }
+}
+
+
 @media screen and (max-width: 1400px){
     .price-content{
         padding-left:8em;
@@ -8,16 +22,40 @@
     .coaches-text{
         padding-left: 8em;
     }
-    .price-img {
-        overflow: hidden;
-    }
+    
     .slider-iteam {
         height: 390px;
     }
 }
+@media screen and (max-width: 1342px){
+    .price-content{
+        padding-left:6em;
+    }
+    
+    .coaches-text{
+        padding-left: 6em;
+    }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1282px) {
+    .price-content{
+        padding-left:4em;
+    }
+    .coaches-text{
+        padding-left: 4em;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
 @media screen and (max-width: 1199px){
     .hero-img img {
-        
         max-width: 700px;
     }
     .hero-content{
@@ -64,7 +102,7 @@
     }
     .price-content{
         width: 100%;
-        text-align: center;
+        
         padding:50px 30px 30px 30px;
     }
     .price-box{
@@ -182,7 +220,63 @@
         font-size: 30px!important;
     }
     .popup-content form{
-        padding: 20px;
+        padding:10px 10px;
+    }
+
+    .popup-caption p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .popup-caption h3 {
+        font-size: 21px;
+    }
+    .popup-content form input {
+        padding: 10px 14px 10px 14px;
+        margin-bottom: 8px;
+      
+    }
+    label.radio span {
+        padding: 7px 7px;
+        background: #F7F7F7;
+        display: inline-block;
+        color: #000;
+        font-weight: 400;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+    .price-box h6{
+        text-align: left;
+    }
+    footer {
+        padding: 40px 0;
+        text-align: center;
+    }
+    .footer-logo p{
+        font-size: 22px;
+    }
+    .socail-media {
+        justify-content: center;
+    }
+    .footer-link ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-link li a {
+        transition: .6s;
+        color: #fff;
+        font-size: 14px;
+        margin: 0 14px;
+    }
+    .socail-media li a{
+        font-size: 14px;
+    }
+    .footer-margin{
+        margin-top: -14px;
+    }
+    .footer-link p{
+        text-align: center;
     }
 
 }
